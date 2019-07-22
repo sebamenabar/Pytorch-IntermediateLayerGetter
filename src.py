@@ -28,7 +28,7 @@ class IntermediateLayerGetter(nn.Module):
         for name, new_name in self.return_layers.items():
             layer = rgetattr(self._model, name)
             
-            def hook(module, input, output):
+            def hook(module, input, output, new_name=new_name):
                 ret[new_name] = output
             h = layer.register_forward_hook(hook)
             handles.append(h)
