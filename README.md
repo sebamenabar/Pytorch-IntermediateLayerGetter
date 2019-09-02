@@ -4,6 +4,14 @@ Simple easy to use module to get the intermediate results from chosen submodules
 
 ```python
 model = MyModel()
+# Model definition
+# MyModel(
+#   (submodule1): Submodule(...)
+#   (submodule2): Submodule(
+#       conv: Conv2(...)
+#   )
+# ...
+# )
 
 # return_layers: {[current_module_name]: [desired_output_name]}
 return_layers = {
