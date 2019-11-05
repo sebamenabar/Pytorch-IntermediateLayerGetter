@@ -18,7 +18,7 @@ class Model(nn.Module):
             nn.Sequential(nn.Linear(2, 2), nn.Linear(2, 3)),
             nn.Linear(3, 1),
         )
-        self.interaction_idty = nn.Identity()
+        self.interaction_idty = nn.Identity() # Simple trick for operations not performed as modules
 
     def forward(self, x):
         x1 = self.fc1(x)
