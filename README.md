@@ -1,6 +1,13 @@
 Simple easy to use module to get the intermediate results from chosen submodules. Supports submodule annidation. Inspired in [this](https://github.com/pytorch/vision/blob/f76e598d47879dbd917bf5936bbd11ff41632787/torchvision/models/_utils.py#L7) but does not assume that submodules are executed sequentially.
 
-#### Example
+# Installation
+
+```sh
+pip install torch_intermediate_layer_getter
+```
+
+# Usage
+## Example
 
 ```python
 import torch
