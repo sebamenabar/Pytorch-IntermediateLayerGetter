@@ -3,7 +3,7 @@ Simple easy to use module to get the intermediate results from chosen submodules
 # Installation
 
 ```sh
-pip install torch_intermediate_layer_getter
+pip install torch-intermediate-layer-getter
 ```
 
 # Usage
