@@ -1,4 +1,8 @@
-Simple easy to use module to get the intermediate results from chosen submodules. Supports submodule annidation. Inspired in [this](https://github.com/pytorch/vision/blob/f76e598d47879dbd917bf5936bbd11ff41632787/torchvision/models/_utils.py#L7) but does not assume that submodules are executed sequentially.
+Simple easy to use module to get the intermediate results from chosen submodules. Inspired in [this](https://github.com/pytorch/vision/blob/f76e598d47879dbd917bf5936bbd11ff41632787/torchvision/models/_utils.py#L7) but does not assume that submodules are executed sequentially. Pypi [link](https://pypi.org/project/torch-intermediate-layer-getter/)
+
+List of features:
+- Supports submodule annidation (module1.submodule2.submodule3)
+- In case that a module is called more than once during a forward pass, all it's outputs are saved a in a list.
 
 # Installation
 
